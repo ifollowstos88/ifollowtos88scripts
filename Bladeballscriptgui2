@@ -44,7 +44,7 @@ local AutoParry = Instance.new("Frame")
 local UICorner_8 = Instance.new("UICorner")
 local TextLabel_5 = Instance.new("TextLabel")
 local TextLabel_6 = Instance.new("TextLabel")
-local TextButton = Instance.new("TextButton")
+local MainButtonScript = Instance.new("TextButton")
 local HoldBlock = Instance.new("Frame")
 local UICorner_9 = Instance.new("UICorner")
 local TextLabel_7 = Instance.new("TextLabel")
@@ -83,7 +83,6 @@ ScriptMainHolder.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScriptMainHolder.BorderSizePixel = 0
 ScriptMainHolder.Position = UDim2.new(0.102909863, 0, 0.104693137, 0)
 ScriptMainHolder.Size = UDim2.new(0, 1118, 0, 438)
-ScriptMainHolder.Visible = false
 
 HomeFrame.Name = "HomeFrame"
 HomeFrame.Parent = ScriptMainHolder
@@ -389,16 +388,20 @@ TextLabel_6.Text = "-- Automatically parrys the ball"
 TextLabel_6.TextColor3 = Color3.fromRGB(183, 183, 183)
 TextLabel_6.TextSize = 10.000
 
-TextButton.Parent = AutoParry
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BackgroundTransparency = 1.000
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Size = UDim2.new(0, 295, 0, 39)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = ""
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextSize = 14.000
+MainButtonScript.Name = "MainButtonScript"
+MainButtonScript.Parent = AutoParry
+MainButtonScript.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainButtonScript.BackgroundTransparency = 1.000
+MainButtonScript.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainButtonScript.BorderSizePixel = 0
+MainButtonScript.Size = UDim2.new(0, 295, 0, 39)
+MainButtonScript.Font = Enum.Font.SourceSans
+MainButtonScript.Text = ""
+MainButtonScript.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainButtonScript.TextSize = 14.000
+MainButtonScript.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://scriptblox.com/raw/Blade-Ball-Opensource-autoparry-8123'),true))()
+end)
 
 HoldBlock.Name = "HoldBlock"
 HoldBlock.Parent = ScrollingFrame
@@ -592,8 +595,8 @@ TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_10.BackgroundTransparency = 1.000
 TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_10.BorderSizePixel = 0
-TextLabel_10.Position = UDim2.new(-0.343434334, 0, 0.252999693, 0)
-TextLabel_10.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_10.Position = UDim2.new(-0.055555556, 0, 0.252999693, 0)
+TextLabel_10.Size = UDim2.new(0, 75, 0, 50)
 TextLabel_10.Font = Enum.Font.SourceSans
 TextLabel_10.Text = "Open = E"
 TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -604,8 +607,8 @@ TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_11.BackgroundTransparency = 1.000
 TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_11.BorderSizePixel = 0
-TextLabel_11.Position = UDim2.new(-0.0101010101, 0, 0.28372851, 0)
-TextLabel_11.Size = UDim2.new(0, 200, 0, 43)
+TextLabel_11.Position = UDim2.new(0.277777791, 0, 0.28372851, 0)
+TextLabel_11.Size = UDim2.new(0, 51, 0, 43)
 TextLabel_11.Font = Enum.Font.SourceSans
 TextLabel_11.Text = "Close = T"
 TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -616,7 +619,7 @@ TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_12.BackgroundTransparency = 1.000
 TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_12.BorderSizePixel = 0
-TextLabel_12.Position = UDim2.new(0.00505050505, 0, -0.0620428361, 0)
+TextLabel_12.Position = UDim2.new(0.00505050505, 0, -0.0032193053, 0)
 TextLabel_12.Size = UDim2.new(0, 183, 0, 49)
 TextLabel_12.Font = Enum.Font.SourceSans
 TextLabel_12.Text = "To get rid of the login page press \" K \""
@@ -625,7 +628,7 @@ TextLabel_12.TextSize = 14.000
 
 -- Scripts:
 
-local function STDH_fake_script() -- PlayerIconHere.LocalScript 
+local function UVJICO_fake_script() -- PlayerIconHere.LocalScript 
 	local script = Instance.new('LocalScript', PlayerIconHere)
 
 	local Players = game:GetService("Players")
@@ -633,8 +636,8 @@ local function STDH_fake_script() -- PlayerIconHere.LocalScript
 	local imagelabel = script.Parent
 	imagelabel.Image = Players:GetUserThumbnailAsync(player.UserId,Enum.ThumbnailType.HeadShot,Enum.ThumbnailSize.Size420x420)
 end
-coroutine.wrap(STDH_fake_script)()
-local function BOYNLA_fake_script() -- BladeBallText.LocalScript 
+coroutine.wrap(UVJICO_fake_script)()
+local function JMMQ_fake_script() -- BladeBallText.LocalScript 
 	local script = Instance.new('LocalScript', BladeBallText)
 
 	local player = game.Players.LocalPlayer
@@ -643,16 +646,16 @@ local function BOYNLA_fake_script() -- BladeBallText.LocalScript
 		script.Parent.Text = ""..player.Name.."@outlookmail.com"
 	end
 end
-coroutine.wrap(BOYNLA_fake_script)()
-local function CPGECR_fake_script() -- UserHere.LocalScript 
+coroutine.wrap(JMMQ_fake_script)()
+local function TSQZ_fake_script() -- UserHere.LocalScript 
 	local script = Instance.new('LocalScript', UserHere)
 
 	local player = game.Players.LocalPlayer
 	
 	script.Parent.Text = player.Name
 end
-coroutine.wrap(CPGECR_fake_script)()
-local function UOMWZXD_fake_script() -- PlayerIconHere_2.LocalScript 
+coroutine.wrap(TSQZ_fake_script)()
+local function LOGTN_fake_script() -- PlayerIconHere_2.LocalScript 
 	local script = Instance.new('LocalScript', PlayerIconHere_2)
 
 	local Players = game:GetService("Players")
@@ -660,8 +663,8 @@ local function UOMWZXD_fake_script() -- PlayerIconHere_2.LocalScript
 	local imagelabel = script.Parent
 	imagelabel.Image = Players:GetUserThumbnailAsync(player.UserId,Enum.ThumbnailType.HeadShot,Enum.ThumbnailSize.Size420x420)
 end
-coroutine.wrap(UOMWZXD_fake_script)()
-local function XVGLZOQ_fake_script() -- PlayerIconHere_3.LocalScript 
+coroutine.wrap(LOGTN_fake_script)()
+local function ZHIAVAT_fake_script() -- PlayerIconHere_3.LocalScript 
 	local script = Instance.new('LocalScript', PlayerIconHere_3)
 
 	local Players = game:GetService("Players")
@@ -669,8 +672,8 @@ local function XVGLZOQ_fake_script() -- PlayerIconHere_3.LocalScript
 	local imagelabel = script.Parent
 	imagelabel.Image = Players:GetUserThumbnailAsync(player.UserId,Enum.ThumbnailType.HeadShot,Enum.ThumbnailSize.Size420x420)
 end
-coroutine.wrap(XVGLZOQ_fake_script)()
-local function LHKD_fake_script() -- ScriptMainHolder.LocalScript 
+coroutine.wrap(ZHIAVAT_fake_script)()
+local function JTASZ_fake_script() -- ScriptMainHolder.LocalScript 
 	local script = Instance.new('LocalScript', ScriptMainHolder)
 
 	local Plr = game.Players.LocalPlayer
@@ -688,8 +691,8 @@ local function LHKD_fake_script() -- ScriptMainHolder.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LHKD_fake_script)()
-local function EJMGJ_fake_script() -- ScriptMainHolder.LocalScript 
+coroutine.wrap(JTASZ_fake_script)()
+local function YWFWSSX_fake_script() -- ScriptMainHolder.LocalScript 
 	local script = Instance.new('LocalScript', ScriptMainHolder)
 
 	local UIS = game:GetService('UserInputService')
@@ -727,4 +730,16 @@ local function EJMGJ_fake_script() -- ScriptMainHolder.LocalScript
 		end
 	end)
 end
-coroutine.wrap(EJMGJ_fake_script)()
+coroutine.wrap(YWFWSSX_fake_script)()
+local function SICK_fake_script() -- KeyBindsFrame.LocalScript 
+	local script = Instance.new('LocalScript', KeyBindsFrame)
+
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "m" then
+			script.Parent.Visible = false
+		end
+	end)
+end
+coroutine.wrap(SICK_fake_script)()
