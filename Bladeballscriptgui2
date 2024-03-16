@@ -1,0 +1,730 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local ScriptMainHolder = Instance.new("Frame")
+local HomeFrame = Instance.new("Frame")
+local DropShadowHolder = Instance.new("Frame")
+local DropShadow = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local PlayerIconHere = Instance.new("ImageLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local UICorner_2 = Instance.new("UICorner")
+local UserHere = Instance.new("TextLabel")
+local BladeBallText = Instance.new("TextLabel")
+local WhatsNewFrame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local HomeImageLabel = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local MainFrame = Instance.new("Frame")
+local DropShadowHolder_2 = Instance.new("Frame")
+local DropShadow_2 = Instance.new("ImageLabel")
+local UICorner_4 = Instance.new("UICorner")
+local MainImageLabel = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local PlayerIconHere_2 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local UICorner_5 = Instance.new("UICorner")
+local UserHere_2 = Instance.new("TextLabel")
+local BladeBallText_2 = Instance.new("TextLabel")
+local SearchFrame = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local AllButton = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local AutoParry = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local HoldBlock = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local SettingsFrame = Instance.new("Frame")
+local DropShadowHolder_3 = Instance.new("Frame")
+local DropShadow_3 = Instance.new("ImageLabel")
+local UICorner_10 = Instance.new("UICorner")
+local SettingsImageLabel = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local PlayerIconHere_3 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local UICorner_11 = Instance.new("UICorner")
+local NotDone = Instance.new("TextLabel")
+local Soon = Instance.new("TextLabel")
+local NotDone_2 = Instance.new("TextLabel")
+local Soon_2 = Instance.new("TextLabel")
+local KeyBindsFrame = Instance.new("Frame")
+local DropShadowHolder_4 = Instance.new("Frame")
+local DropShadow_4 = Instance.new("ImageLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ScriptMainHolder.Name = "ScriptMainHolder"
+ScriptMainHolder.Parent = ScreenGui
+ScriptMainHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptMainHolder.BackgroundTransparency = 1.000
+ScriptMainHolder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScriptMainHolder.BorderSizePixel = 0
+ScriptMainHolder.Position = UDim2.new(0.102909863, 0, 0.104693137, 0)
+ScriptMainHolder.Size = UDim2.new(0, 1118, 0, 438)
+ScriptMainHolder.Visible = false
+
+HomeFrame.Name = "HomeFrame"
+HomeFrame.Parent = ScriptMainHolder
+HomeFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+HomeFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HomeFrame.BorderSizePixel = 0
+HomeFrame.Position = UDim2.new(0.357355207, 0, -0.00139293936, 0)
+HomeFrame.Size = UDim2.new(0, 327, 0, 437)
+
+DropShadowHolder.Name = "DropShadowHolder"
+DropShadowHolder.Parent = HomeFrame
+DropShadowHolder.BackgroundTransparency = 1.000
+DropShadowHolder.BorderSizePixel = 0
+DropShadowHolder.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder.ZIndex = 0
+
+DropShadow.Name = "DropShadow"
+DropShadow.Parent = DropShadowHolder
+DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow.BackgroundTransparency = 1.000
+DropShadow.BorderSizePixel = 0
+DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow.Size = UDim2.new(1, 47, 1, 47)
+DropShadow.ZIndex = 0
+DropShadow.Image = "rbxassetid://6014261993"
+DropShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+DropShadow.ImageTransparency = 0.500
+DropShadow.ScaleType = Enum.ScaleType.Slice
+DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
+
+UICorner.Parent = HomeFrame
+
+PlayerIconHere.Name = "PlayerIconHere"
+PlayerIconHere.Parent = HomeFrame
+PlayerIconHere.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerIconHere.BackgroundTransparency = 1.000
+PlayerIconHere.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerIconHere.BorderSizePixel = 0
+PlayerIconHere.Position = UDim2.new(0.342507631, 0, 0.116704807, 0)
+PlayerIconHere.Size = UDim2.new(0, 103, 0, 103)
+PlayerIconHere.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UIAspectRatioConstraint.Parent = PlayerIconHere
+
+UICorner_2.CornerRadius = UDim.new(0, 200)
+UICorner_2.Parent = PlayerIconHere
+
+UserHere.Name = "UserHere"
+UserHere.Parent = HomeFrame
+UserHere.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UserHere.BackgroundTransparency = 1.000
+UserHere.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UserHere.BorderSizePixel = 0
+UserHere.Position = UDim2.new(0.192660555, 0, 0.352402747, 0)
+UserHere.Size = UDim2.new(0, 200, 0, 50)
+UserHere.Font = Enum.Font.GothamBold
+UserHere.Text = "UserHere"
+UserHere.TextColor3 = Color3.fromRGB(255, 255, 255)
+UserHere.TextSize = 25.000
+
+BladeBallText.Name = "BladeBallText"
+BladeBallText.Parent = UserHere
+BladeBallText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BladeBallText.BackgroundTransparency = 1.000
+BladeBallText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BladeBallText.BorderSizePixel = 0
+BladeBallText.Position = UDim2.new(-0.00233947765, 0, 0.392402351, 0)
+BladeBallText.Size = UDim2.new(0, 200, 0, 50)
+BladeBallText.Font = Enum.Font.GothamBold
+BladeBallText.Text = "UserHereAgain"
+BladeBallText.TextColor3 = Color3.fromRGB(174, 176, 176)
+BladeBallText.TextSize = 14.000
+
+WhatsNewFrame.Name = "WhatsNewFrame"
+WhatsNewFrame.Parent = HomeFrame
+WhatsNewFrame.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+WhatsNewFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WhatsNewFrame.BorderSizePixel = 0
+WhatsNewFrame.Position = UDim2.new(0.0581039749, 0, 0.553775728, 0)
+WhatsNewFrame.Size = UDim2.new(0, 288, 0, 104)
+
+UICorner_3.Parent = WhatsNewFrame
+
+TextLabel.Parent = WhatsNewFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.0416666679, 0, -0.365384609, 0)
+TextLabel.Size = UDim2.new(0, 112, 0, 50)
+TextLabel.Font = Enum.Font.Gotham
+TextLabel.Text = "Whats new?"
+TextLabel.TextColor3 = Color3.fromRGB(190, 192, 192)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = WhatsNewFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.152777776, 0, 0.259615391, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.Gotham
+TextLabel_2.Text = "Blade Ball Script Release!"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 20.000
+
+HomeImageLabel.Name = "HomeImageLabel"
+HomeImageLabel.Parent = HomeFrame
+HomeImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HomeImageLabel.BackgroundTransparency = 1.000
+HomeImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HomeImageLabel.BorderSizePixel = 0
+HomeImageLabel.Position = UDim2.new(0.434250772, 0, 0.88558352, 0)
+HomeImageLabel.Size = UDim2.new(0, 41, 0, 42)
+HomeImageLabel.Image = "rbxassetid://7072717697"
+HomeImageLabel.ImageColor3 = Color3.fromRGB(0, 168, 255)
+
+UIAspectRatioConstraint_2.Parent = HomeImageLabel
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScriptMainHolder
+MainFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.692877412, 0, -0.00139293936, 0)
+MainFrame.Size = UDim2.new(0, 327, 0, 437)
+
+DropShadowHolder_2.Name = "DropShadowHolder"
+DropShadowHolder_2.Parent = MainFrame
+DropShadowHolder_2.BackgroundTransparency = 1.000
+DropShadowHolder_2.BorderSizePixel = 0
+DropShadowHolder_2.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder_2.ZIndex = 0
+
+DropShadow_2.Name = "DropShadow"
+DropShadow_2.Parent = DropShadowHolder_2
+DropShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow_2.BackgroundTransparency = 1.000
+DropShadow_2.BorderSizePixel = 0
+DropShadow_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow_2.Size = UDim2.new(1, 47, 1, 47)
+DropShadow_2.ZIndex = 0
+DropShadow_2.Image = "rbxassetid://6014261993"
+DropShadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+DropShadow_2.ImageTransparency = 0.500
+DropShadow_2.ScaleType = Enum.ScaleType.Slice
+DropShadow_2.SliceCenter = Rect.new(49, 49, 450, 450)
+
+UICorner_4.Parent = MainFrame
+
+MainImageLabel.Name = "MainImageLabel"
+MainImageLabel.Parent = MainFrame
+MainImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainImageLabel.BackgroundTransparency = 1.000
+MainImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainImageLabel.BorderSizePixel = 0
+MainImageLabel.Position = UDim2.new(0.452599376, 0, 0.883295178, 0)
+MainImageLabel.Size = UDim2.new(0, 41, 0, 42)
+MainImageLabel.Image = "rbxassetid://7072719383"
+MainImageLabel.ImageColor3 = Color3.fromRGB(0, 168, 255)
+
+UIAspectRatioConstraint_3.Parent = MainImageLabel
+
+PlayerIconHere_2.Name = "PlayerIconHere"
+PlayerIconHere_2.Parent = MainFrame
+PlayerIconHere_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerIconHere_2.BackgroundTransparency = 1.000
+PlayerIconHere_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerIconHere_2.BorderSizePixel = 0
+PlayerIconHere_2.Position = UDim2.new(0.831804276, 0, 0.045766592, 0)
+PlayerIconHere_2.Size = UDim2.new(0, 40, 0, 38)
+PlayerIconHere_2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UIAspectRatioConstraint_4.Parent = PlayerIconHere_2
+
+UICorner_5.CornerRadius = UDim.new(0, 200)
+UICorner_5.Parent = PlayerIconHere_2
+
+UserHere_2.Name = "UserHere"
+UserHere_2.Parent = MainFrame
+UserHere_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UserHere_2.BackgroundTransparency = 1.000
+UserHere_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UserHere_2.BorderSizePixel = 0
+UserHere_2.Position = UDim2.new(0.192660555, 0, 0.0320366137, 0)
+UserHere_2.Size = UDim2.new(0, 200, 0, 50)
+UserHere_2.Font = Enum.Font.GothamBold
+UserHere_2.Text = "Main Features"
+UserHere_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+UserHere_2.TextSize = 20.000
+
+BladeBallText_2.Name = "BladeBallText"
+BladeBallText_2.Parent = UserHere_2
+BladeBallText_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BladeBallText_2.BackgroundTransparency = 1.000
+BladeBallText_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BladeBallText_2.BorderSizePixel = 0
+BladeBallText_2.Position = UDim2.new(-0.00233947765, 0, 0.392402351, 0)
+BladeBallText_2.Size = UDim2.new(0, 200, 0, 50)
+BladeBallText_2.Font = Enum.Font.GothamBold
+BladeBallText_2.Text = "This is the Main Features Section"
+BladeBallText_2.TextColor3 = Color3.fromRGB(174, 176, 176)
+BladeBallText_2.TextSize = 14.000
+
+SearchFrame.Name = "SearchFrame"
+SearchFrame.Parent = MainFrame
+SearchFrame.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+SearchFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SearchFrame.BorderSizePixel = 0
+SearchFrame.Position = UDim2.new(0.0825688094, 0, 0.189931348, 0)
+SearchFrame.Size = UDim2.new(0, 279, 0, 42)
+
+UICorner_6.CornerRadius = UDim.new(0, 14)
+UICorner_6.Parent = SearchFrame
+
+TextLabel_3.Parent = SearchFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Size = UDim2.new(0, 87, 0, 42)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "Search"
+TextLabel_3.TextColor3 = Color3.fromRGB(191, 193, 193)
+TextLabel_3.TextSize = 14.000
+
+ImageLabel.Parent = SearchFrame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.886060715, 0, 0.180832639, 0)
+ImageLabel.Size = UDim2.new(0, 24, 0, 28)
+ImageLabel.Image = "rbxassetid://7072721559"
+
+UIAspectRatioConstraint_5.Parent = ImageLabel
+
+AllButton.Name = "AllButton"
+AllButton.Parent = MainFrame
+AllButton.BackgroundColor3 = Color3.fromRGB(18, 164, 255)
+AllButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AllButton.BorderSizePixel = 0
+AllButton.Position = UDim2.new(0.0825688094, 0, 0.30938217, 0)
+AllButton.Size = UDim2.new(0, 80, 0, 27)
+
+UICorner_7.CornerRadius = UDim.new(0, 200)
+UICorner_7.Parent = AllButton
+
+TextLabel_4.Parent = AllButton
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.0946426392, 0, -0.154285982, 0)
+TextLabel_4.Size = UDim2.new(0, 63, 0, 35)
+TextLabel_4.Font = Enum.Font.GothamBold
+TextLabel_4.Text = "All"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 16.000
+
+ScrollingFrame.Parent = MainFrame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(-0.00305810408, 0, 0.379862696, 0)
+ScrollingFrame.Size = UDim2.new(0, 327, 0, 208)
+
+AutoParry.Name = "AutoParry"
+AutoParry.Parent = ScrollingFrame
+AutoParry.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+AutoParry.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoParry.BorderSizePixel = 0
+AutoParry.Position = UDim2.new(0.0519877672, 0, 0.0395010449, 0)
+AutoParry.Size = UDim2.new(0, 295, 0, 39)
+
+UICorner_8.CornerRadius = UDim.new(0, 200)
+UICorner_8.Parent = AutoParry
+
+TextLabel_5.Parent = AutoParry
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.0291262139, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0, 124, 0, 39)
+TextLabel_5.Font = Enum.Font.GothamBold
+TextLabel_5.Text = "Auto Parry"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 16.000
+
+TextLabel_6.Parent = AutoParry
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.332203388, 0, 0, 0)
+TextLabel_6.Size = UDim2.new(0, 188, 0, 38)
+TextLabel_6.Font = Enum.Font.GothamBold
+TextLabel_6.Text = "-- Automatically parrys the ball"
+TextLabel_6.TextColor3 = Color3.fromRGB(183, 183, 183)
+TextLabel_6.TextSize = 10.000
+
+TextButton.Parent = AutoParry
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(0, 295, 0, 39)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+HoldBlock.Name = "HoldBlock"
+HoldBlock.Parent = ScrollingFrame
+HoldBlock.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+HoldBlock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HoldBlock.BorderSizePixel = 0
+HoldBlock.Position = UDim2.new(0.0489296652, 0, 0.09289404, 0)
+HoldBlock.Size = UDim2.new(0, 295, 0, 39)
+
+UICorner_9.CornerRadius = UDim.new(0, 200)
+UICorner_9.Parent = HoldBlock
+
+TextLabel_7.Parent = HoldBlock
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.0291262139, 0, 0, 0)
+TextLabel_7.Size = UDim2.new(0, 124, 0, 39)
+TextLabel_7.Font = Enum.Font.GothamBold
+TextLabel_7.Text = "Hold Block"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 16.000
+
+TextLabel_8.Parent = HoldBlock
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.349152535, 0, 0, 0)
+TextLabel_8.Size = UDim2.new(0, 188, 0, 38)
+TextLabel_8.Font = Enum.Font.GothamBold
+TextLabel_8.Text = "-- Holding H blocks the ball ( DOESNT WORK CURRENTLY )"
+TextLabel_8.TextColor3 = Color3.fromRGB(183, 183, 183)
+TextLabel_8.TextSize = 6.000
+
+TextLabel_9.Parent = MainFrame
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.131498471, 0, 0.281464517, 0)
+TextLabel_9.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_9.Font = Enum.Font.GothamBold
+TextLabel_9.Text = "Favorite"
+TextLabel_9.TextColor3 = Color3.fromRGB(167, 167, 167)
+TextLabel_9.TextSize = 14.000
+
+SettingsFrame.Name = "SettingsFrame"
+SettingsFrame.Parent = ScriptMainHolder
+SettingsFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+SettingsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SettingsFrame.BorderSizePixel = 0
+SettingsFrame.Position = UDim2.new(0.0207624864, 0, -0.00187097839, 0)
+SettingsFrame.Size = UDim2.new(0, 327, 0, 437)
+
+DropShadowHolder_3.Name = "DropShadowHolder"
+DropShadowHolder_3.Parent = SettingsFrame
+DropShadowHolder_3.BackgroundTransparency = 1.000
+DropShadowHolder_3.BorderSizePixel = 0
+DropShadowHolder_3.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder_3.ZIndex = 0
+
+DropShadow_3.Name = "DropShadow"
+DropShadow_3.Parent = DropShadowHolder_3
+DropShadow_3.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow_3.BackgroundTransparency = 1.000
+DropShadow_3.BorderSizePixel = 0
+DropShadow_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow_3.Size = UDim2.new(1, 47, 1, 47)
+DropShadow_3.ZIndex = 0
+DropShadow_3.Image = "rbxassetid://6014261993"
+DropShadow_3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+DropShadow_3.ImageTransparency = 0.500
+DropShadow_3.ScaleType = Enum.ScaleType.Slice
+DropShadow_3.SliceCenter = Rect.new(49, 49, 450, 450)
+
+UICorner_10.Parent = SettingsFrame
+
+SettingsImageLabel.Name = "SettingsImageLabel"
+SettingsImageLabel.Parent = SettingsFrame
+SettingsImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingsImageLabel.BackgroundTransparency = 1.000
+SettingsImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SettingsImageLabel.BorderSizePixel = 0
+SettingsImageLabel.Position = UDim2.new(0, 141, 0, 386)
+SettingsImageLabel.Size = UDim2.new(0, 41, 0, 42)
+SettingsImageLabel.Image = "rbxassetid://7072721682"
+SettingsImageLabel.ImageColor3 = Color3.fromRGB(0, 168, 255)
+
+UIAspectRatioConstraint_6.Parent = SettingsImageLabel
+
+PlayerIconHere_3.Name = "PlayerIconHere"
+PlayerIconHere_3.Parent = SettingsFrame
+PlayerIconHere_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerIconHere_3.BackgroundTransparency = 1.000
+PlayerIconHere_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayerIconHere_3.BorderSizePixel = 0
+PlayerIconHere_3.Position = UDim2.new(0.339449555, 0, 0.0732265413, 0)
+PlayerIconHere_3.Size = UDim2.new(0, 111, 0, 111)
+PlayerIconHere_3.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UIAspectRatioConstraint_7.Parent = PlayerIconHere_3
+
+UICorner_11.CornerRadius = UDim.new(0, 200)
+UICorner_11.Parent = PlayerIconHere_3
+
+NotDone.Name = "NotDone"
+NotDone.Parent = SettingsFrame
+NotDone.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotDone.BackgroundTransparency = 1.000
+NotDone.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NotDone.BorderSizePixel = 0
+NotDone.Position = UDim2.new(0.18960245, 0, 0.352402747, 0)
+NotDone.Size = UDim2.new(0, 200, 0, 50)
+NotDone.Font = Enum.Font.GothamBold
+NotDone.Text = "This section is not finished yet!"
+NotDone.TextColor3 = Color3.fromRGB(255, 255, 255)
+NotDone.TextSize = 20.000
+
+Soon.Name = "Soon!"
+Soon.Parent = NotDone
+Soon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Soon.BackgroundTransparency = 1.000
+Soon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Soon.BorderSizePixel = 0
+Soon.Position = UDim2.new(-0.00233947765, 0, 0.392402351, 0)
+Soon.Size = UDim2.new(0, 200, 0, 50)
+Soon.Font = Enum.Font.GothamBold
+Soon.Text = "it'll be finished in the near feature. So stay tuned!"
+Soon.TextColor3 = Color3.fromRGB(174, 176, 176)
+Soon.TextSize = 12.000
+
+NotDone_2.Name = "NotDone"
+NotDone_2.Parent = SettingsFrame
+NotDone_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotDone_2.BackgroundTransparency = 1.000
+NotDone_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NotDone_2.BorderSizePixel = 0
+NotDone_2.Position = UDim2.new(0.18960245, 0, 0.352402747, 0)
+NotDone_2.Size = UDim2.new(0, 200, 0, 50)
+NotDone_2.Font = Enum.Font.GothamBold
+NotDone_2.Text = "This section is not finished yet!"
+NotDone_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+NotDone_2.TextSize = 20.000
+
+Soon_2.Name = "Soon!"
+Soon_2.Parent = NotDone_2
+Soon_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Soon_2.BackgroundTransparency = 1.000
+Soon_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Soon_2.BorderSizePixel = 0
+Soon_2.Position = UDim2.new(-0.00233947765, 0, 1.29240239, 0)
+Soon_2.Size = UDim2.new(0, 200, 0, 50)
+Soon_2.Font = Enum.Font.GothamBold
+Soon_2.Text = "Made by ifollowtos88"
+Soon_2.TextColor3 = Color3.fromRGB(251, 252, 255)
+Soon_2.TextSize = 25.000
+
+KeyBindsFrame.Name = "KeyBindsFrame"
+KeyBindsFrame.Parent = ScreenGui
+KeyBindsFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+KeyBindsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KeyBindsFrame.BorderSizePixel = 0
+KeyBindsFrame.Position = UDim2.new(0.869410932, 0, 0.871264517, 0)
+KeyBindsFrame.Size = UDim2.new(0, 198, 0, 102)
+
+DropShadowHolder_4.Name = "DropShadowHolder"
+DropShadowHolder_4.Parent = KeyBindsFrame
+DropShadowHolder_4.BackgroundTransparency = 1.000
+DropShadowHolder_4.BorderSizePixel = 0
+DropShadowHolder_4.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder_4.ZIndex = 0
+
+DropShadow_4.Name = "DropShadow"
+DropShadow_4.Parent = DropShadowHolder_4
+DropShadow_4.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow_4.BackgroundTransparency = 1.000
+DropShadow_4.BorderSizePixel = 0
+DropShadow_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow_4.Size = UDim2.new(1, 47, 1, 47)
+DropShadow_4.ZIndex = 0
+DropShadow_4.Image = "rbxassetid://6014261993"
+DropShadow_4.ImageColor3 = Color3.fromRGB(0, 0, 0)
+DropShadow_4.ImageTransparency = 0.500
+DropShadow_4.ScaleType = Enum.ScaleType.Slice
+DropShadow_4.SliceCenter = Rect.new(49, 49, 450, 450)
+
+TextLabel_10.Parent = KeyBindsFrame
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(-0.343434334, 0, 0.252999693, 0)
+TextLabel_10.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "Open = E"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextSize = 14.000
+
+TextLabel_11.Parent = KeyBindsFrame
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(-0.0101010101, 0, 0.28372851, 0)
+TextLabel_11.Size = UDim2.new(0, 200, 0, 43)
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = "Close = T"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextSize = 14.000
+
+TextLabel_12.Parent = KeyBindsFrame
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(0.00505050505, 0, -0.0620428361, 0)
+TextLabel_12.Size = UDim2.new(0, 183, 0, 49)
+TextLabel_12.Font = Enum.Font.SourceSans
+TextLabel_12.Text = "To get rid of the login page press \" K \""
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextSize = 14.000
+
+-- Scripts:
+
+local function STDH_fake_script() -- PlayerIconHere.LocalScript 
+	local script = Instance.new('LocalScript', PlayerIconHere)
+
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local imagelabel = script.Parent
+	imagelabel.Image = Players:GetUserThumbnailAsync(player.UserId,Enum.ThumbnailType.HeadShot,Enum.ThumbnailSize.Size420x420)
+end
+coroutine.wrap(STDH_fake_script)()
+local function BOYNLA_fake_script() -- BladeBallText.LocalScript 
+	local script = Instance.new('LocalScript', BladeBallText)
+
+	local player = game.Players.LocalPlayer
+	
+	if player then
+		script.Parent.Text = ""..player.Name.."@outlookmail.com"
+	end
+end
+coroutine.wrap(BOYNLA_fake_script)()
+local function CPGECR_fake_script() -- UserHere.LocalScript 
+	local script = Instance.new('LocalScript', UserHere)
+
+	local player = game.Players.LocalPlayer
+	
+	script.Parent.Text = player.Name
+end
+coroutine.wrap(CPGECR_fake_script)()
+local function UOMWZXD_fake_script() -- PlayerIconHere_2.LocalScript 
+	local script = Instance.new('LocalScript', PlayerIconHere_2)
+
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local imagelabel = script.Parent
+	imagelabel.Image = Players:GetUserThumbnailAsync(player.UserId,Enum.ThumbnailType.HeadShot,Enum.ThumbnailSize.Size420x420)
+end
+coroutine.wrap(UOMWZXD_fake_script)()
+local function XVGLZOQ_fake_script() -- PlayerIconHere_3.LocalScript 
+	local script = Instance.new('LocalScript', PlayerIconHere_3)
+
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local imagelabel = script.Parent
+	imagelabel.Image = Players:GetUserThumbnailAsync(player.UserId,Enum.ThumbnailType.HeadShot,Enum.ThumbnailSize.Size420x420)
+end
+coroutine.wrap(XVGLZOQ_fake_script)()
+local function LHKD_fake_script() -- ScriptMainHolder.LocalScript 
+	local script = Instance.new('LocalScript', ScriptMainHolder)
+
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "e" then
+			script.Parent.Visible = true
+		end
+	end)
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "t" then
+			script.Parent.Visible = false
+		end
+	end)
+end
+coroutine.wrap(LHKD_fake_script)()
+local function EJMGJ_fake_script() -- ScriptMainHolder.LocalScript 
+	local script = Instance.new('LocalScript', ScriptMainHolder)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(EJMGJ_fake_script)()
